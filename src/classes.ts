@@ -1,6 +1,6 @@
 //atividade1
 export abstract class Ingresso {
-    constructor(protected valor: number) {}
+    constructor(protected valor: number) { }
 
     abstract imprimeValor(): void;
 }
@@ -36,7 +36,7 @@ export class Camarote extends Ingresso {
 
 //atividade 2
 export class Imovel {
-    constructor(private endereco: string, private preco: number) {}
+    constructor(private endereco: string, private preco: number) { }
 
     getEndereco(): string {
         return this.endereco;
@@ -70,7 +70,7 @@ export class Velho extends Imovel {
 
 // atividade 3
 export class Animal {
-    constructor(private nome: string, private idade: number) {}
+    constructor(private nome: string, private idade: number) { }
 
     fazerBarulho(): void {
         console.log("O animal faz algum barulho.");
